@@ -1,0 +1,12 @@
+#recherche{
+  margin: 15px;
+  padding: 15px;
+ 
+}
+.moviesGrid{
+  display: grid !important;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 5px;
+  padding: 15px;
+  margin: 15px;
+}
