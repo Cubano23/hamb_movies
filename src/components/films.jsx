@@ -1,6 +1,6 @@
-import React from 'react'
+import React,{Component} from 'react'
 
-class Films extends React.Component {
+class Films extends Component {
   viewMovie() {
  
     const url = "https://www.themoviedb.org/movie/" + this.props.movie.id;
@@ -9,7 +9,7 @@ class Films extends React.Component {
 
   render() {
     
-    return <div key={this.props.movie.id} className="row d-flex justify-content-around moviesGrid">
+    return <div key={this.props.movie.id} >
             <div>
               <img alt="poster" width="120" src={this.props.movie.poster_src}/>
         

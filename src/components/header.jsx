@@ -9,7 +9,7 @@ const Header = () => {
         <header>
             <div className="container-fluid">        
                 <nav className="navbar navbar-light purple lighten-4 mb-4">     
-                <Link className="navbar-brand" to="#">Hamb movies</Link>       
+                <Link className="navbar-brand" to="/">Hamb movies</Link>       
                 <button className="navbar-toggler toggler-example purple darken-3" type="button" data-toggle="collapse"
                     data-target="#navbarSupportedContent41" aria-controls="navbarSupportedContent41" aria-expanded="false"
                     aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button> 
@@ -22,7 +22,7 @@ const Header = () => {
                         <Link className="nav-link" to="/">Accueil<span className="sr-only">(current)</span></Link>
                     </li>
                     <li className="nav-item">
-                        <Link className="nav-link" to="/Films">A propos</Link>
+                        <Link className="nav-link" to="/Films">Films</Link>
                     </li>
                     <li className="nav-item">
                         <Link className="nav-link" to="/about">A propos</Link>

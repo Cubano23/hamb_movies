@@ -1,61 +1,25 @@
 import React, { Component } from 'react';
 import './App.css';
-import Films from './components/films'
-import $ from 'jquery'
-import Header from "./components/header"
+import Header from "./components/header";
+import Gallery from "./components/gallery";
+import {Route} from "react-router-dom";
+import Home from "./components/home"
+import Footer from "./components/footer";
 
-class App extends Component {
-
-  constructor(props) {
-    super(props)
-    this.state = {}
- 
-
-    this.performSearch("greta")
-  }
-
-  performSearch(searchTerm) {
- 
-    const urlString = "https://api.themoviedb.org/3/search/movie?api_key=1b5adf76a72a13bad99b8fc0c68cb085&query=" + searchTerm
-    $.ajax({
-      url: urlString,
-      success: (recherche) => {  
-        const results = recherche.results
-        console.log(recherche);
-
-        var movieRows = []
-
-        results.forEach((movie) => {
-          movie.poster_src = "https://image.tmdb.org/t/p/w185" + movie.poster_path
-       
-          const movieRow = <Films key={movie.id} movie={movie}/>
-          movieRows.push(movieRow)
-        })
-
-        this.setState({rows: movieRows})
-      },
-      error: (xhr, status, err) => {
-        console.error("Erreur!")
-      }
-    })
-  }
-
-  searchChangeHandler(event) {
-    console.log(event.target.value)
-    const boundObject = this
-    const searchTerm = event.target.value
-    boundObject.performSearch(searchTerm)
-  }
+class App extends Component { 
 
   render() {
     return (
       <div className="fluid">
-        <Header/>
-      
-        <input id="recherche" onChange={this.searchChangeHandler.bind(this)} placeholder="Rechercher pour un filme..."/>
+        <Header/>       
 
+        <Route exact path = "/films" render={() => <Gallery  /> } />
 
-        {this.state.rows}
+        <Route exact path = "/" render={() => <Home /> } />
+
+        <Footer />
+       
+       
 
       </div>
     );
