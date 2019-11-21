@@ -22,10 +22,13 @@ const Header = () => {
                         <Link className="nav-link" to="/">Accueil<span className="sr-only">(current)</span></Link>
                     </li>
                     <li className="nav-item">
-                        <Link className="nav-link" to="#">A propos</Link>
+                        <Link className="nav-link" to="/Films">A propos</Link>
                     </li>
                     <li className="nav-item">
-                        <Link className="nav-link" to="#">Contact</Link>
+                        <Link className="nav-link" to="/about">A propos</Link>
+                    </li>
+                    <li className="nav-item">
+                        <Link className="nav-link" to="/contact">Contact</Link>
                     </li>
                     </ul>
                 </div>
