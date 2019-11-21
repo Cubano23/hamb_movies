@@ -3,8 +3,8 @@ import { Link } from "react-router-dom";
 
 const About = () => {
     return ( 
-        <div className="container">
-            <h1>&Agrave; propos</h1>
+        <div className="container" style={{marginTop:100}}>
+         
             <div className="about">
             <h2>Projet Finale</h2>
             <h2>Formation développeur front end</h2>
