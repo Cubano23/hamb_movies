@@ -36,3 +36,9 @@ footer {
     margin: 15px;
   }
 }
+.about{
+  text-align: center;
+}
+.about ul li{
+  list-style: none;
+}

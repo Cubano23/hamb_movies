@@ -1,5 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faHome } from '@fortawesome/free-solid-svg-icons';
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { faInfoCircle } from '@fortawesome/free-solid-svg-icons';
+import { faPlay } from '@fortawesome/free-solid-svg-icons';
+
 
 
 
@@ -12,23 +18,23 @@ const Header = () => {
                 <Link className="navbar-brand" to="/">Hamb movies</Link>       
                 <button className="navbar-toggler toggler-example purple darken-3" type="button" data-toggle="collapse"
                     data-target="#navbarSupportedContent41" aria-controls="navbarSupportedContent41" aria-expanded="false"
-                    aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button> 
+                    aria-label="Toggle navigation"><span className="navbar-toggler-icon"></span></button> 
 
                    
                
                 <div className="collapse navbar-collapse" id="navbarSupportedContent41">          
                     <ul className="navbar-nav mr-auto">
                     <li className="nav-item active">
-                        <Link className="nav-link" to="/">Accueil<span className="sr-only">(current)</span></Link>
+                        <Link className="nav-link" to="/"><FontAwesomeIcon icon={faHome}></FontAwesomeIcon>&nbsp;&nbsp;Accueil<span className="sr-only">(current)</span></Link>
                     </li>
                     <li className="nav-item">
-                        <Link className="nav-link" to="/Films">Films</Link>
+                        <Link className="nav-link" to="/Films"><FontAwesomeIcon icon={faPlay}></FontAwesomeIcon>&nbsp;&nbsp;Films</Link>
                     </li>
                     <li className="nav-item">
-                        <Link className="nav-link" to="/about">A propos</Link>
+                        <Link className="nav-link" to="/about"><FontAwesomeIcon icon={faInfoCircle}></FontAwesomeIcon>&nbsp;&nbsp;&Agrave; propos</Link>
                     </li>
                     <li className="nav-item">
-                        <Link className="nav-link" to="/contact">Contact</Link>
+                        <Link className="nav-link" to="/contact"><FontAwesomeIcon icon={faEnvelope}></FontAwesomeIcon>&nbsp;&nbsp;Contact</Link>
                     </li>
                     </ul>
                 </div>

@@ -4,7 +4,9 @@
 #sudo yarn
 
 #instaler fontawesome
-#https://www.npmjs.com/package/@fortawesome/react-fontawesome
+# yarn add @fortawesome/fontawesome-svg-core
+# yarn add @fortawesome/free-solid-svg-icons
+# yarn add @fortawesome/react-fontawesome
 
 #pour lancer l'application sur le navegateur
 #sudo yarn start
