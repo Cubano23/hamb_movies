@@ -14,18 +14,29 @@ class FilmDetail extends Component {
 
           const film = results.filter( (el) => { return el.id === Number(this.props.match.params.id) })[0]
           this.setState({film :  film})
+          
         } )
+    
       }
+    
 
     render() { 
-       const {original_title , poster_path , overview} = this.state.film;
-       console.log(this.state.film)
+       const {title , poster_path , overview,release_date, popularity,vote_average} = this.state.film;
+      
         return ( 
-            <div>
-                
-                <div className="filmDetail">                    
-                    <img src={`https://image.tmdb.org/t/p/w185${poster_path}`} alt="poster" /> 
-                    <p>{overview}</p>
+            <div>                
+                <div className="filmDetail">
+                    <div>
+                        <img src={`https://image.tmdb.org/t/p/w185${poster_path}`} alt="poster" />
+                    </div>              
+                    <div>
+                        <p style={{fontSize:"2em"}}>{title}</p>
+                        <p>{overview}</p>
+                        <p>Date de sortie: {release_date}</p>
+                        <p>Popularité: {popularity}</p>
+                        <small>Vote moyen</small>                        
+                        <p className="vote">{vote_average}%</p>                
+                    </div>                     
                 </div>
           </div>
          );

@@ -61,4 +61,15 @@ footer {
 .filmDetail p{
   margin-right: 180px;
 }
+.vote{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 100px;
+  background-color: #000;
+  border:5px solid chartreuse;
+  border-radius: 100%;
+  color: #fff;
+}
 
