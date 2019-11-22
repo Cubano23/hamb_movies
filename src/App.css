@@ -29,7 +29,7 @@ footer {
   width: 100%;
  
 }
-@media screen and (max-width: 1280px)
+@media screen and (max-width: 600px)
 {
   .moviesGrid{
     display: grid !important;
@@ -41,22 +41,29 @@ footer {
 }
 .about{
   text-align: center;
+  color: #fff;
+  font-family: "cursive";
 }
 .about ul li{
   list-style: none;
 }
 .nav-link:hover {
   font-size: 30px;
-  color: blueviolet !important;
+  color: #6a1b9a !important;
+}
+.nav-link {
+ 
+  color: #3F3F3F !important;
 }
 .filmDetail img{
-  width: 500px;
+  width: 400px;
   margin-left: 200px;
 }
 .filmDetail{
   font-size: 1.5em;
   display: grid !important;
   grid-template-columns: repeat(2, 1fr);
+  color: #fff;
 }
 .filmDetail p{
   margin-right: 180px;
@@ -72,4 +79,17 @@ footer {
   border-radius: 100%;
   color: #fff;
 }
+.navbar-brand{
+  padding: 10px;
+}
+.navbar-brand h1{
+  font-size: 2em;
+  color: #6a1b9a;
+  font-family:"fantasy";
+}
+.detail{
+ 
+  width: 400px;
+}
+
 

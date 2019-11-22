@@ -34,7 +34,7 @@ class Gallery extends Component {
                return( 
               <article key={i}>
                  <Link to={`/filmDetail/${film.id}`}>
-                  <img src={`https://image.tmdb.org/t/p/w185${film.poster_path}`} alt=""/> 
+                  <img src={`https://image.tmdb.org/t/p/w185${film.poster_path}`} alt="" className="img-thumbnail" style={{borderRadius:10,height:320}}/> 
                  </Link>               
               </article>)
               })}

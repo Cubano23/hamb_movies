@@ -5,6 +5,7 @@ import { faHome } from '@fortawesome/free-solid-svg-icons';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { faInfoCircle } from '@fortawesome/free-solid-svg-icons';
 import { faPlay } from '@fortawesome/free-solid-svg-icons';
+import { faCameraRetro } from '@fortawesome/free-solid-svg-icons';
 
 
 
@@ -15,7 +16,7 @@ const Header = () => {
         <header>
             <div className="container-fluid">        
                 <nav className="navbar navbar-light purple lighten-4 mb-4">     
-                <Link className="navbar-brand" to="/">Hamb movies</Link>       
+                <Link className="navbar-brand" to="/"><FontAwesomeIcon icon={faCameraRetro} size="5x" color="#6a1b9a"></FontAwesomeIcon>&nbsp;&nbsp;<h1>Hamb movies</h1></Link>       
                 <button className="navbar-toggler toggler-example purple darken-3" type="button" data-toggle="collapse"
                     data-target="#navbarSupportedContent41" aria-controls="navbarSupportedContent41" aria-expanded="false"
                     aria-label="Toggle navigation"><span className="navbar-toggler-icon"></span></button> 

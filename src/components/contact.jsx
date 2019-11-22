@@ -66,10 +66,10 @@ export default class Contact extends Component {
         <form className="form-group" onSubmit={this.handleSubmit.bind(this)} method="post">
           <div>
             <label>Votre nom</label>
-            <input type="text" name="nom" id="nom" className="form-control" onChange={this.handleChange.bind(this, 'nom')} required/>
+            <input type="text" name="nom" id="nom" className="form-control" placeholder="Non" onChange={this.handleChange.bind(this, 'nom')} required/>
             <label>Email</label>
-            <input type="email" name="email" id="email" className="form-control" onChange={this.handleChange.bind(this, 'email')} required/>
-            <h3>Message</h3>
+            <input type="email" name="email" id="email" className="form-control" placeholder="votre.email@email.com" onChange={this.handleChange.bind(this, 'email')} required/>
+            <label>Message</label>
             <textarea
               id="content"
               name="message"         
