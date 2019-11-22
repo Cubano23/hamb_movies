@@ -5,10 +5,14 @@
 }
 .moviesGrid{
   display: grid !important;
-  grid-template-columns: repeat(5, 1fr);
-  grid-gap: 5px;
-  padding: 15px;
-  margin: 15px;
+  grid-template-columns: repeat(8, 1fr);
+  grid-gap: 6px;
+  padding: 10px;
+  margin: 10px;
+}
+
+.moviesGrid img{
+  width: 100%;
 }
 footer {
   text-align: center;
@@ -41,3 +45,20 @@ footer {
 .about ul li{
   list-style: none;
 }
+.nav-link:hover {
+  font-size: 30px;
+  color: blueviolet !important;
+}
+.filmDetail img{
+  width: 500px;
+  margin-left: 200px;
+}
+.filmDetail{
+  font-size: 1.5em;
+  display: grid !important;
+  grid-template-columns: repeat(2, 1fr);
+}
+.filmDetail p{
+  margin-right: 180px;
+}
+
