@@ -12,12 +12,9 @@ class FilmDetail extends Component {
 
                 const film = results.filter( (el) => {return el.id === Number(this.props.match.params.id) })[0];
                 this.setState({film :  film});
-                console.log(film)
-
-               
+                console.log(film)              
          
-              } ) 
-            
+              } )             
         }  
 
     render() { 

@@ -41,7 +41,8 @@ class Gallery extends Component {
                       }
                     })()}                
                  </Link> 
-                 <small>{film.title}</small>              
+                 <small style={{color:"#fff"}}>{film.title}</small> 
+                 <p style={{color:"#fff"}}>{film.release_date}</p>              
               </article>)
               })}
             </div>
