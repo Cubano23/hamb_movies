@@ -18,12 +18,15 @@ const About = () => {
 reconnaissance aux personnes suivantes, pour leur dévouement et leur soutient dans la
 concrétisation de ce projet.</p>
             <ul>
-                <li>Formateur Enseignant‎ React-js, monsieur Malik </li>
-                <li>Formateur Enseignant Javascript, monsieur Paul</li>
-                <li>Formateur Enseignant Algorithimes,HTML,CSS, monsieur Florian</li>
-                <li>Coordenatrice Greta, madame Nouel</li>
-                <li></li>
-                <li>&Agrave; tous et &agrave; toutes colegues de salle.</li>
+                <li>Formateur Accompagnement à l'emploi, monsieur BELHOUS Hakim</li>
+                <li>Formateur React-js, monsieur HARRIZ Malik </li>
+                <li>Formateur Linux OS, monsieur SORIN Pascal</li>
+                <li>Formateur Javascript, monsieur CARTAU Paul</li>
+                <li>Formateur Algorithimes,HTML,CSS, monsieur DOYEN Florian</li>
+                <li>Coordenatrice Greta, madame NOUEL Marie Annick</li>
+                <li>Assistante formation, madame FAVREAU Nattalie</li>
+                <li>Conseillère formation continu, madame BOUTET Laetitia</li>
+                <li>Et &agrave; tous et &agrave; toutes colegues de salle.</li>
            
             </ul>
             <h3> <Link className="btn btn-warning" to="/code_source"><img src="/github.png" style={{width:"30px"}}/>&nbsp;Télécharger le code source</Link></h3>

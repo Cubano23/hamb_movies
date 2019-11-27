@@ -1,7 +1,9 @@
 import React, { Component } from "react";
 import emailjs from "emailjs-com";
 import $ from 'jquery';
-import GoogleMap from "./map";
+import GoogleMap from "./googleMap";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faAddressCard } from '@fortawesome/free-solid-svg-icons';
 
 export default class Contact extends Component {
   constructor(props) {
@@ -85,7 +87,7 @@ export default class Contact extends Component {
             </div>
               <input type="submit" value="Summetre" className="btn btn-success" />
             </form>
-            <h5>Adresse: 39 rue de Paris, 78610 Le Perray en Yvelines.</h5> 
+            <h5><FontAwesomeIcon icon={faAddressCard} size="2x"></FontAwesomeIcon>&nbsp;&nbsp;Adresse: 39 rue de Paris, 78610 Le Perray en Yvelines.</h5> 
           </div>
           <div className="container-fluid">                
             <div>

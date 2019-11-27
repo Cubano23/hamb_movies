@@ -49,7 +49,7 @@ footer {
 }
 .nav-link:hover {
   font-size: 30px;
-  color: #6a1b9a !important;
+  color: #fff !important;
 }
 .nav-link {
  
@@ -84,7 +84,7 @@ footer {
 }
 .navbar-brand h1{
   font-size: 2em;
-  color: #6a1b9a;
+  color: #fff;
   font-family:"fantasy";
 }
 .detail{
