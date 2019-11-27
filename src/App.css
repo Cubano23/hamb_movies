@@ -91,5 +91,18 @@ footer {
  
   width: 400px;
 }
+h5{
+  color: #fff;
+}
+.form-group{
+  color: #fff;
+}
+footer{
+  color: #fff;
+  font-size: 2em;
+}
+hr{
+  background-color: #fff;
+}
 
 
