@@ -38,6 +38,23 @@ footer {
     padding: 15px;
     margin: 15px;
   }
+
+}
+@media screen and (max-width: 600px)
+{
+  .filmDetail{
+    display: grid !important;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 5px;
+    padding: 15px;
+    margin: 15px;
+    display: flex;
+    justify-content: center;
+  }
+  .splot{
+    margin-top: 320px;
+    display: block;
+  }
 }
 .about{
   text-align: center;
@@ -64,6 +81,13 @@ footer {
   display: grid !important;
   grid-template-columns: repeat(2, 1fr);
   color: #fff;
+}
+.rec{
+  display: grid !important;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 30px;
+
+
 }
 .filmDetail p{
   margin-right: 180px;

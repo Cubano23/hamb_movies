@@ -23,7 +23,7 @@ class Gallery extends Component {
     }
   
     render() {
-      console.log(this.state.rows)
+      //console.log(this.state.rows)
       return (
         <div className="fluid">
             <input id="recherche" 
@@ -34,8 +34,14 @@ class Gallery extends Component {
                return( 
               <article key={i}>
                  <Link to={`/filmDetail/${film.id}`}>
-                  <img src={`https://image.tmdb.org/t/p/w185${film.poster_path}`} alt="" className="img-thumbnail" style={{borderRadius:10,height:320}}/> 
-                 </Link>               
+                  {(() => {
+                      switch (film.poster_path) {
+                        case null:   return <img src="/no_image.png" alt="no_image" style={{borderRadius:10,height:320}}/>;                     
+                        default:      return <img src={`https://image.tmdb.org/t/p/w185${film.poster_path}`} alt="" className="img-thumbnail" style={{borderRadius:10,height:320}}/> ;
+                      }
+                    })()}                
+                 </Link> 
+                 <small>{film.title}</small>              
               </article>)
               })}
             </div>

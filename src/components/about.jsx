@@ -29,7 +29,7 @@ concrétisation de ce projet.</p>
                 <li>Et &agrave; tous et &agrave; toutes colegues de salle.</li>
            
             </ul>
-            <h3> <Link className="btn btn-warning" to="/code_source"><img src="/github.png" style={{width:"30px"}}/>&nbsp;Télécharger le code source</Link></h3>
+            <h3> <Link className="btn btn-warning" to="/code_source"><img src="/github.png" alt="github" style={{width:"30px"}}/>&nbsp;Télécharger le code source</Link></h3>
             </div>
 
         </div>
